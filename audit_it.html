@@ -20,8 +20,19 @@
             padding: 0;
             background-color: #f4f4f4;
         }
+        jmnode {
+            max-width: 500px !important; /* Batasi lebar maksimum node */
+            white-space: normal !important; /* Izinkan teks membungkus ke baris berikutnya */
+            word-wrap: break-word !important; /* Pisahkan kata panjang jika diperlukan */
+            overflow: visible; /* Pastikan teks tidak terpotong */
+            text-align: center; /* Opsional: Pusatkan teks dalam node */
+            padding: 10px; /* Berikan ruang di dalam node */
+            background-color: #f9f9f9; /* Warna latar untuk tampilan lebih baik */
+            border-radius: 5px; /* Sudut node melengkung */
+        }
+
         #jsmind_container {
-            width: 100%;
+            width: 100% ;
             height: 100vh;
             margin: 0;
         }
