@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Map - Sistem Jaringan Komputer</title>
+    <link
+            type="text/css"
+            rel="stylesheet"
+            href="//cdn.jsdelivr.net/npm/jsmind@0.8.6/style/jsmind.css"
+        />
+        <script
+            type="text/javascript"
+            src="//cdn.jsdelivr.net/npm/jsmind@0.8.6/es6/jsmind.js"
+        ></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        } jmnode {
+            max-width: 700px !important; /* Batasi lebar maksimum node */
+           
+        }
+        #jsmind_container {
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="jsmind_container"></div>
+    <script>
+        var mind = {
+    "meta": {
+        "name": "Manajemen Risiko TI",
+        "author": "ChatGPT",
+        "version": "0.4.6"
+    },
+    "format": "node_tree",
+    "data": {
+        "id": "root",
+        "topic": "Manajemen Risiko TI",
+        "children": [
+            {
+                "id": "pendahuluan",
+                "topic": "Pendahuluan",
+                "children": [
+                    {"id": "latar_belakang", "topic": "Latar Belakang"},
+                    {"id": "tujuan_modul", "topic": "Tujuan Modul"},
+                    {"id": "pentingnya_manajemen_risiko", "topic": "Pentingnya Manajemen Risiko TI"}
+                ]
+            },
+            {
+                "id": "risiko_ti",
+                "topic": "Risiko TI",
+                "children": [
+                    {"id": "definisi_risiko", "topic": "Definisi Risiko"},
+                    {
+                        "id": "jenis_risiko",
+                        "topic": "Jenis Risiko",
+                        "children": [
+                            {"id": "risiko_positif", "topic": "Risiko Positif"},
+                            {"id": "risiko_negatif", "topic": "Risiko Negatif"}
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "manajemen_risiko",
+                "topic": "Manajemen Risiko TI",
+                "children": [
+                    {
+                        "id": "proses_manajemen_risiko",
+                        "topic": "Proses Manajemen Risiko",
+                        "children": [
+                            {"id": "komunikasi_konsultasi", "topic": "Komunikasi dan Konsultasi"},
+                            {"id": "penetapan_konteks", "topic": "Penetapan Konteks Risiko"},
+                            {"id": "penilaian_risiko", "topic": "Penilaian Risiko"},
+                            {"id": "penanganan_risiko", "topic": "Penanganan Risiko"},
+                            {"id": "pemantauan_reviu", "topic": "Pemantauan dan Reviu"},
+                            {"id": "pencatatan_pelaporan", "topic": "Pencatatan dan Pelaporan"}
+                        ]
+                    },
+                    {
+                        "id": "kerangka_kerja",
+                        "topic": "Kerangka Kerja Manajemen Risiko TI",
+                        "children": [
+                            {"id": "prinsip_manajemen_risiko", "topic": "Prinsip Manajemen Risiko"},
+                            {"id": "kepemimpinan_komitmen", "topic": "Kepemimpinan dan Komitmen"},
+                            {"id": "proses_tata_kelola", "topic": "Proses dan Tata Kelola"}
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "penilaian_risiko",
+                "topic": "Penilaian Risiko TI",
+                "children": [
+                    {"id": "identifikasi_risiko", "topic": "Identifikasi Risiko"},
+                    {"id": "analisis_risiko", "topic": "Analisis Risiko"},
+                    {"id": "evaluasi_risiko", "topic": "Evaluasi Risiko"}
+                ]
+            },
+            {
+                "id": "penanganan_risiko",
+                "topic": "Penanganan Risiko TI",
+                "children": [
+                    {
+                        "id": "opsi_penanganan",
+                        "topic": "Opsi Penanganan Risiko",
+                        "children": [
+                            {"id": "eksploitasi_risiko", "topic": "Eksploitasi Risiko"},
+                            {"id": "mitigasi_risiko", "topic": "Mitigasi Risiko"},
+                            {"id": "transfer_risiko", "topic": "Transfer Risiko"},
+                            {"id": "penghindaran_risiko", "topic": "Penghindaran Risiko"},
+                            {"id": "penerimaan_risiko", "topic": "Penerimaan Risiko"}
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "pemantauan_evaluasi",
+                "topic": "Pemantauan dan Evaluasi",
+                "children": [
+                    {"id": "pengertian_monitoring", "topic": "Pengertian Monitoring dan Evaluasi"},
+                    {"id": "teknik_alat_monitoring", "topic": "Teknik dan Alat Monitoring"},
+                    {"id": "laporan_monitoring", "topic": "Laporan Monitoring dan Evaluasi"}
+                ]
+            },
+            {
+                "id": "kesimpulan",
+                "topic": "Kesimpulan",
+                "children": [
+ {"id": "manfaat_manajemen_risiko", "topic": "Manfaat Manajemen Risiko TI"},
+                    {"id": "saran_perbaikan", "topic": "Saran Perbaikan"}
+                ]
+            }
+        ]
+    }
+};
+
+        var options = {
+            container: 'jsmind_container',
+            theme: 'primary',
+            mode: 'full',
+            editable: false
+        };
+
+        var jm = new jsMind(options);
+        jm.show(mind);
+    </script>
+</body>
+</html>

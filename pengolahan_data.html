@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Map - Pengolahan Data</title>
+    <link
+            type="text/css"
+            rel="stylesheet"
+            href="//cdn.jsdelivr.net/npm/jsmind@0.8.6/style/jsmind.css"
+        />
+        <script
+            type="text/javascript"
+            src="//cdn.jsdelivr.net/npm/jsmind@0.8.6/es6/jsmind.js"
+        ></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }jmnode {
+            max-width: 700px !important; /* Batasi lebar maksimum node */
+           
+        }
+        #jsmind_container {
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="jsmind_container"></div>
+    <script>
+        var mind = {
+            "meta": {
+                "name": "Pengolahan Data",
+                "author": "ChatGPT",
+                "version": "0.4.6"
+            },
+            "format": "node_tree",
+            "data": {
+                "id": "root",
+                "topic": "Pengolahan Data",
+                "children": [
+                    {
+                        "id": "pendahuluan",
+                        "topic": "Pendahuluan",
+                        "children": [
+                            {"id": "latar_belakang", "topic": "Latar Belakang"},
+                            {"id": "tujuan_modul", "topic": "Tujuan Modul"},
+                            {"id": "pentingnya", "topic": "Pentingnya Pengolahan Data"}
+                        ]
+                    },
+                    {
+                        "id": "studi_kelayakan",
+                        "topic": "Studi Kelayakan Pengolahan Data",
+                        "children": [
+                            {"id": "definisi_studi", "topic": "Definisi Studi Kelayakan"},
+                            {
+                                "id": "tujuan_studi",
+                                "topic": "Tujuan Studi Kelayakan",
+                                "children": [
+                                    {"id": "hindari_risiko", "topic": "Menghindari Risiko Kerugian"},
+                                    {"id": "permudah_perencanaan", "topic": "Mempermudah Perencanaan"},
+                                    {"id": "mudahkan_pelaksanaan", "topic": "Memudahkan Pelaksanaan Pekerjaan"},
+                                    {"id": "mudahkan_pengawasan", "topic": "Memudahkan Pengawasan"},
+                                    {"id": "mudahkan_pengendalian", "topic": "Memudahkan Pengendalian"}
+                                ]
+                            },
+                            {
+                                "id": "metode_pengumpulan",
+                                "topic": "Metode Pengumpulan Data",
+                                "children": [
+                                    {"id": "wawancara", "topic": "Wawancara"},
+                                    {"id": "kuesioner", "topic": "Kuesioner"},
+                                    {"id": "review_catatan", "topic": "Review Catatan"},
+                                    {"id": "observasi", "topic": "Observasi"}
+                                ]
+                            },
+                            {
+                                "id": "aspek_kelayakan",
+                                "topic": "Aspek Kelayakan",
+                                "children": [
+                                    {"id": "kelayakan_teknis", "topic": "Kelayakan Teknis"},
+                                    {"id": "kelayakan_ekonomi", "topic": "Kelayakan Ekonomi"},
+                                    {"id": "kelayakan_hukum", "topic": "Kelayakan Hukum"},
+                                    {"id": "kelayakan_operasional", "topic": "Kelayakan Operasional"},
+                                    {"id": "kelayakan_jadwal", "topic": "Kelayakan Jadwal"}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "penyusunan_prosedur",
+                        "topic": "Penyusunan Prosedur Pengolahan Data",
+                        "children": [
+                            {
+                                "id": "sop",
+                                "topic": "Standard Operational Procedure (SOP)",
+                                "children": [
+                                    {"id": "manfaat_sop", "topic": "Manfaat SOP"},
+                                    {"id": "prinsip_sop", "topic": "Prinsip Penyusunan SOP"}
+                                ]
+                            },
+                            {
+                                "id": "format_sop",
+                                "topic": "Format SOP",
+                                "children": [
+                                    {"id": "langkah_sederhana", "topic": "Langkah Sederhana"},
+                                    {"id": "hirarki", "topic": "Hirarki"},
+                                    {"id": "grafik", "topic": "Grafik"},
+                                    {"id": "flowchart", "topic": "Flowchart"}
+                                ]
+                            },
+                            {
+                                "id": "petunjuk_teknis",
+                                "topic": "Penyusunan Petunjuk Teknis",
+                                "children": [
+                                    {"id": "manfaat_juknis", "topic": "Manfaat Petunjuk Teknis"},
+                                    {"id": "cara_penyusunan", "topic": "Cara Penyusunan Petunjuk Teknis"}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "data_crawling_feeding_loading",
+                        "topic": "Data Crawling, Feeding, dan Loading",
+                        "children": [
+                            {
+                                "id": "data_crawling",
+                                "topic": "Data Crawling",
+                                "children": [
+                                    {"id": "definisi_crawling", "topic": "Definisi dan Proses"},
+                                    {"id": "langkah_crawling", "topic": "Langkah-langkah Crawling"}
+                                ]
+                            },
+                            {
+                                "id": "data_feeding",
+                                "topic": "Data Feeding",
+                                "children": [
+                                    {"id": "definisi_feeding", "topic": "Definisi dan Proses"}
+                                ]
+                            },
+                            {
+                                "id": "data_loading",
+                                "topic": "Data Loading",
+                                "children": [
+                                    {"id": "definisi_loading", "topic": "Definisi dan Proses"}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "manipulasi_data",
+                        "topic": "Manipulasi Data",
+                        "children": [
+                            {"id": "teknik_manipulasi", "topic": "Teknik Manipulasi Data"},
+                            {"id": "pentingnya_cleaning", "topic": "Pentingnya Cleaning Data"}
+                        ]
+                    },
+                    {
+                        "id": "pemantauan_evaluasi",
+                        "topic": "Pemantauan dan Evaluasi",
+                        "children": [
+                            {"id": "pengertian_monitoring", "topic": "Pengertian Monitoring dan Evaluasi"},
+                            {"id": "teknik_alat_monitoring", "topic": "Teknik dan Alat Monitoring"},
+                            {"id": "laporan_monitoring", "topic": "Laporan Monitoring dan Evaluasi"}
+                        ]
+                    },
+                    {
+                        "id": "kesimpulan",
+                        "topic": "Kesimpulan",
+                        "children": [
+                            {"id": "pentingnya_pengolahan", "topic": "Pentingnya Pengolahan Data"},
+                            {"id": "kualitas_data", "topic": "Kualitas Data yang Dihasilkan"},
+                            {"id": "proses_pengelolaan", "topic": "Proses Pengelolaan Data"}
+                        ]
+                    }
+                ]
+            }
+        };
+
+        var options = {
+            container: 'jsmind_container',
+            theme: 'primary',
+            mode: 'full',
+            editable: false
+        };
+
+        var jm = new jsMind(options);
+        jm.show(mind);
+    </script>
+</body>
+</html>

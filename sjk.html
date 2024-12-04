@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Map - Sistem Jaringan Komputer</title>
+    <link
+            type="text/css"
+            rel="stylesheet"
+            href="//cdn.jsdelivr.net/npm/jsmind@0.8.6/style/jsmind.css"
+        />
+        <script
+            type="text/javascript"
+            src="//cdn.jsdelivr.net/npm/jsmind@0.8.6/es6/jsmind.js"
+        ></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        } jmnode {
+            max-width: 700px !important; /* Batasi lebar maksimum node */
+           
+        }
+        #jsmind_container {
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="jsmind_container"></div>
+    <script>
+        var mind = {
+            "meta": {
+                "name": "Sistem Jaringan Komputer",
+                "author": "ChatGPT",
+                "version": "0.4.6"
+            },
+            "format": "node_tree",
+            "data": {
+                "id": "root",
+                "topic": "Sistem Jaringan Komputer",
+                "children": [
+                    {
+                        "id": "pendahuluan",
+                        "topic": "Pendahuluan",
+                        "children": [
+                            {"id": "latar_belakang", "topic": "Latar Belakang"},
+                            {"id": "tujuan_modul", "topic": "Tujuan Modul"},
+                            {"id": "pentingnya", "topic": "Pentingnya Sistem Jaringan Komputer"}
+                        ]
+                    },
+                    {
+                        "id": "analisis_kebutuhan",
+                        "topic": "Analisis Kebutuhan Sistem Jaringan Komputer",
+                        "children": [
+                            {
+                                "id": "konsep_sistem",
+                                "topic": "Konsep Sistem Jaringan Komputer",
+                                "children": [
+                                    {"id": "komunikasi_data", "topic": "Komunikasi Data"},
+                                    {"id": "definisi_jaringan", "topic": "Definisi Jaringan Komputer"},
+                                    {"id": "manfaat_jaringan", "topic": "Manfaat Jaringan Komputer"},
+                                    {
+                                        "id": "klasifikasi_jaringan",
+                                        "topic": "Klasifikasi Jaringan Komputer",
+                                        "children": [
+                                            {"id": "PAN", "topic": "Personal Area Network (PAN)"},
+                                            {"id": "LAN", "topic": "Local Area Network (LAN)"},
+                                            {"id": "MAN", "topic": "Metropolitan Area Network (MAN)"},
+                                            {"id": "WAN", "topic": "Wide Area Network (WAN)"}
+                                        ]
+                                    }
+                                ]
+                            },
+                            {"id": "analisis_kebutuhan_pengguna", "topic": "Analisis Kebutuhan Pengguna"},
+                            {"id": "analisis_sistem_berjalan", "topic": "Analisis Sistem Berjalan"}
+                        ]
+                    },
+                    {
+                        "id": "perancangan_sistem",
+                        "topic": "Perancangan Sistem Jaringan Komputer",
+                        "children": [
+                            {
+                                "id": "topologi_jaringan",
+                                "topic": "Topologi Jaringan",
+                                "children": [
+                                    {"id": "topologi_bus", "topic": "Topologi Bus"},
+                                    {"id": "topologi_star", "topic": "Topologi Star"},
+                                    {"id": "topologi_ring", "topic": "Topologi Ring"},
+                                    {"id": "topologi_mesh", "topic": "Topologi Mesh"},
+                                    {"id": "topologi_hybrid", "topic": "Topologi Hybrid"}
+                                ]
+                            },
+                            {"id": "rancangan_logis", "topic": "Rancangan Logis Sistem Jaringan Komputer"},
+                            {"id": "rancangan_fisik", "topic": "Rancangan Fisik Sistem Jaringan Komputer"}
+                        ]
+                    },
+                    {
+                        "id": "penerapan_sistem",
+                        "topic": "Penerapan Sistem Jaringan Komputer",
+                        "children": [
+                            {"id": "penerapan_rancangan_fisik", "topic": "Penerapan Rancangan Fisik Jaringan Komputer"},
+                            {"id": "penerapan_rancangan_logis", "topic": "Penerapan Rancangan Logis Jaringan Komputer"},
+                            {"id": "pengujian_sistem", "topic": "Pengujian Sistem Jaringan Komputer"}
+                        ]
+                    },
+                    {
+                        "id": "evaluasi_sistem",
+                        "topic": "Evaluasi Sistem Jaringan Komputer",
+                        "children": [
+                            {"id": "monitoring_evaluasi", "topic": "Monitoring dan Evaluasi Sistem Jaringan Komputer"},
+                            {"id": "analisis_permasalahan", "topic": "Analisis Permasalahan Sistem Jaringan Komputer"},
+                            {"id": "optimalisasi_sistem", "topic": "Optimalisasi Sistem Jaringan Komputer"}
+                        ]
+                    },
+                    {
+                        "id": "kesimpulan",
+                        "topic": "Kesimpulan",
+                        "children": [
+                            {"id": "pentingnya_sistem", "topic": "Pentingnya Sistem Jaringan Komputer"},
+                            {"id": "kualitas_jaringan", "topic": "Kualitas Jaringan yang Dihasilkan"},
+                            {"id": "proses_pengelolaan", "topic": "Proses Pengelolaan Jaringan Komputer"}
+                        ]
+                    }
+                ]
+            }
+        };
+
+        var options = {
+            container: 'jsmind_container',
+            theme: 'primary',
+            mode: 'full',
+            editable: false
+        };
+
+        var jm = new jsMind(options);
+        jm.show(mind);
+    </script>
+</body>
+</html>

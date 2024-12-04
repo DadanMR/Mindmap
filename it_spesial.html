@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Map - Sistem Jaringan Komputer</title>
+    <link
+            type="text/css"
+            rel="stylesheet"
+            href="//cdn.jsdelivr.net/npm/jsmind@0.8.6/style/jsmind.css"
+        />
+        <script
+            type="text/javascript"
+            src="//cdn.jsdelivr.net/npm/jsmind@0.8.6/es6/jsmind.js"
+        ></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        } jmnode {
+            max-width: 700px !important; /* Batasi lebar maksimum node */
+           
+        }
+        #jsmind_container {
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="jsmind_container"></div>
+    <script>
+        var mind = {
+    "meta": {
+        "name": "Area TI Spesial/Khusus",
+        "author": "ChatGPT",
+        "version": "0.4.6"
+    },
+    "format": "node_tree",
+    "data": {
+        "id": "root",
+        "topic": "Area TI Spesial/Khusus",
+        "children": [
+            {
+                "id": "pendahuluan",
+                "topic": "Pendahuluan",
+                "children": [
+                    {"id": "latar_belakang", "topic": "Latar Belakang"},
+                    {"id": "deskripsi_singkat", "topic": "Deskripsi Singkat"},
+                    {"id": "tujuan_pembelajaran", "topic": "Tujuan Pembelajaran"},
+                    {"id": "panduan_penggunaan", "topic": "Panduan Penggunaan Modul"}
+                ]
+            },
+            {
+                "id": "pemetaan_data_spasial",
+                "topic": "Pemetaan dan Data Spasial",
+                "children": [
+                    {
+                        "id": "uraian_materi",
+                        "topic": "Uraian Materi",
+                        "children": [
+                            {"id": "sistem_referensi_geospasial", "topic": "Sistem Referensi Geospasial"},
+                            {"id": "peta_tematika", "topic": "Peta Tematik"},
+                            {"id": "pengolahan_data_spasial", "topic": "Pengolahan Data Spasial"},
+                            {"id": "analisis_data_spasial", "topic": "Analisis Data Spasial"}
+                        ]
+                    },
+                    {
+                        "id": "rangkuman",
+                        "topic": "Rangkuman",
+                        "children": [
+                            {"id": "sistem_proyeksi", "topic": "Sistem Proyeksi Peta"},
+                            {"id": "data_spasial", "topic": "Data Spasial"},
+                            {"id": "analisis_spasial", "topic": "Analisis Spasial"}
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "objek_multimedia",
+                "topic": "Objek Multimedia",
+                "children": [
+                    {
+                        "id": "uraian_materi_multimedia",
+                        "topic": "Uraian Materi",
+                        "children": [
+                            {"id": "elemen_multimedia", "topic": "Elemen Multimedia"},
+                            {"id": "perancangan_objek_multimedia", "topic": "Perancangan Objek Multimedia"},
+                            {"id": "rekayasa_objek_multimedia", "topic": "Rekayasa Objek Multimedia"}
+                        ]
+                    },
+                    {
+                        "id": "rangkuman_multimedia",
+                        "topic": "Rangkuman",
+                        "children": [
+                            {"id": "manfaat_multimedia", "topic": "Manfaat Multimedia"},
+                            {"id": "aplikasi_multimedia", "topic": "Aplikasi Multimedia"}
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "pemrograman_multimedia",
+                "topic": "Pemrograman Multimedia",
+                "children": [
+                    {
+                        "id": "uraian_materi_pemrograman",
+                        "topic": "Uraian Materi",
+                        "children": [
+                            {"id": "perancangan_program_multimedia", "topic": "Perancangan Program Multimedia"},
+                            {"id": "rekayasa_program_multimedia", "topic": "Rekayasa Program Multimedia"},
+                            {"id": "uji_coba_program_multimedia", "topic": "Uji Coba Program Multimedia"}
+                        ]
+                    },
+                    {
+                        "id": "rangkuman_pemrograman",
+                        "topic": "Rangkuman",
+                        "children": [
+                            {"id": "proses_pengembangan", "topic": "Proses Pengembangan Program"},
+                            {"id": "metode_pengujian", "topic": "Metode Pengujian"}
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "kesimpulan",
+                "topic": "Kesimpulan",
+                "children": [
+                    {"id": "manfaat_modul", "topic": "Manfaat Modul"},
+                    {"id": "saran_perbaikan", "topic": "Saran Perbaikan"}
+                ]
+            }
+        ]
+    }
+};
+
+        var options = {
+            container: 'jsmind_container',
+            theme: 'primary',
+            mode: 'full',
+            editable: false
+        };
+
+        var jm = new jsMind(options);
+        jm.show(mind);
+    </script>
+</body>
+</html>
