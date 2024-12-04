@@ -30,68 +30,105 @@
 <body>
     <div id="jsmind_container"></div>
     <script>
-        var mind = {
-            "meta": {
-                "name": "Audit Teknologi Informasi",
-                "author": "ChatGPT",
-                "version": "0.4.6"
-            },
-            "format": "node_tree",
-            "data": {
-                "id": "root",
-                "topic": "Audit Teknologi Informasi",
+       var mind = {
+    "meta": {
+        "name": "Audit Teknologi Informasi",
+        "author": "ChatGPT",
+        "version": "0.4.6"
+    },
+    "format": "node_tree",
+    "data": {
+        "id": "root",
+        "topic": "Audit Teknologi Informasi",
+        "children": [
+            {
+                "id": "pengantar",
+                "topic": "Pengantar",
                 "children": [
+                    { "id": "tujuan", "topic": "Tujuan: Mengelola dan memeriksa sistem TI secara berkala" },
+                    { "id": "manfaat", "topic": "Manfaat: Memenuhi tujuan dan sasaran bisnis" },
+                    { "id": "materi", "topic": "Materi: Masalah, simulasi, kasus praktis" }
+                ]
+            },
+            {
+                "id": "kerangka_kerja",
+                "topic": "Kerangka Kerja Audit TI",
+                "children": [
+                    { "id": "standar", "topic": "Standar dan Framework" },
                     {
-                        "id": "pengantar",
-                        "topic": "Pengantar",
+                        "id": "framework",
+                        "topic": "COBIT, ITIL, CMMI, PMBOK, PRINCE2, ISO/IEC 20000, ISO 21500, ISO/IEC 38500, TOGAF",
                         "children": [
-                            {"id": "tujuan", "topic": "Tujuan: Mengelola dan memeriksa sistem TI secara berkala"},
-                            {"id": "manfaat", "topic": "Manfaat: Memenuhi tujuan dan sasaran bisnis"},
-                            {"id": "materi", "topic": "Materi: Masalah, simulasi, kasus praktis"}
+                            { "id": "cobit", "topic": "COBIT (Control Objectives for Information and Related Technology)" },
+                            { "id": "itil", "topic": "ITIL (Information Technology Infrastructure Library)" },
+                            { "id": "cmmi", "topic": "CMMI (Capability Maturity Model Integration)" },
+                            { "id": "pmbok", "topic": "PMBOK (Project Management Body of Knowledge)" },
+                            { "id": "prince2", "topic": "PRINCE2 (Projects in a Controlled Environment)" },
+                            { "id": "iso_20000", "topic": "ISO/IEC 20000" },
+                            { "id": "iso_21500", "topic": "ISO 21500" },
+                            { "id": "iso_38500", "topic": "ISO/IEC 38500" },
+                            { "id": "togaf", "topic": "TOGAF (The Open Group Architecture Framework)" }
+                        ]
+                    },
+                    { "id": "cobit5", "topic": "COBIT 5: Best Practice" }
+                ]
+            },
+            {
+                "id": "proses_audit",
+                "topic": "Proses Audit TI",
+                "children": [
+                    { "id": "ruang_lingkup", "topic": "Menentukan Ruang Lingkup, Kriteria, dan Tujuan" },
+                    {
+                        "id": "perencanaan",
+                        "topic": "Perencanaan Audit TI",
+                        "children": [
+                            { "id": "sumber_daya", "topic": "Identifikasi sumber daya" },
+                            { "id": "rencana_audit", "topic": "Menyiapkan rencana audit" },
+                            { "id": "tim_audit", "topic": "Menyusun Tim Audit" }
                         ]
                     },
                     {
-                        "id": "kerangka_kerja",
-                        "topic": "Kerangka Kerja Audit TI",
+                        "id": "melaksanakan",
+                        "topic": "Melaksanakan Prosedur Audit",
                         "children": [
-                            {"id": "standar", "topic": "Standar dan Framework"},
-                            {"id": "cobit", "topic": "COBIT"},
-                            {"id": "itil", "topic": "ITIL"},
-                            {"id": "cmmi", "topic": "CMMI"},
-                            {"id": "pmbok", "topic": "PMBOK"},
-                            {"id": "prince2", "topic": "PRINCE2"},
-                            {"id": "iso", "topic": "ISO/IEC 20000, ISO/IEC 38500"}
+                            { "id": "opening", "topic": "Opening Meeting" },
+                            { "id": "reviu", "topic": "Reviu Dokumen" },
+                            { "id": "pengumpulan", "topic": "Pengumpulan Data" }
                         ]
                     },
                     {
-                        "id": "proses_audit",
-                        "topic": "Proses Audit TI",
+                        "id": "evaluasi_bukti",
+                        "topic": "Reviu dan Evaluasi Bukti",
                         "children": [
-                            {"id": "ruang_lingkup", "topic": "Menentukan Ruang Lingkup, Kriteria, dan Tujuan"},
-                            {"id": "perencanaan", "topic": "Perencanaan Audit TI"},
-                            {"id": "pelaksanaan", "topic": "Melaksanakan Prosedur Audit"}
+                            { "id": "temuan_audit", "topic": "Men-generate Temuan Audit" },
+                            { "id": "laporan", "topic": "Menyiapkan Dokumentasi untuk Laporan Akhir" }
                         ]
                     },
-                    {
-                        "id": "tugas_peran",
-                        "topic": "Tugas dan Peran Auditor TI",
-                        "children": [
-                            {"id": "merencanakan", "topic": "Merencanakan, Melaksanakan, Mengawasi, dan Melaporkan"},
-                            {"id": "pendekatan", "topic": "Menggunakan Pendekatan yang Sesuai"}
-                        ]
-                    },
-                    {
-                        "id": "kesimpulan",
-                        "topic": "Kesimpulan",
-                        "children": [
-                            {"id": "evaluasi", "topic": "Audit TI adalah Kegiatan Evaluasi Sistematis dan Objektif"},
-                            {"id": "kepatuhan", "topic": "Pentingnya Kepatuhan terhadap Prosedur dan Standar"}
-                        ]
-                    }
+                    { "id": "kesimpulan_laporan", "topic": "Menyusun Kesimpulan dan Melaporkan Hasil Audit" }
+                ]
+            },
+            {
+                "id": "tugas_peran",
+                "topic": "Tugas dan Peran Auditor TI",
+                "children": [
+                    { "id": "merencanakan", "topic": "Merencanakan, Melaksanakan, Mengawasi, dan Melaporkan" },
+                    { "id": "pendekatan", "topic": "Menggunakan Pendekatan yang Sesuai" },
+                    { "id": "kehati_hatian", "topic": "Memperhatikan Prinsip Kehati-hatian" }
+                ]
+            },
+            {
+                "id": "kesimpulan",
+                "topic": "Kesimpulan",
+                "children": [
+                    { "id": "evaluasi", "topic": "Audit TI adalah Kegiatan Evaluasi Sistematis dan Objektif" },
+                    { "id": "kepatuhan", "topic": "Pentingnya Kepatuhan terhadap Prosedur dan Standar" }
                 ]
             }
-        };
+        ]
+    }
+};
 
+        // Setup jsMind options
         var options = {
             container: 'jsmind_container',
             theme: 'primary',
@@ -99,8 +136,10 @@
             editable: false
         };
 
+        // Initialize and show the mind map
         var jm = new jsMind(options);
         jm.show(mind);
+
     </script>
 </body>
 </html>
