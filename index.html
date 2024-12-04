@@ -41,52 +41,52 @@
     <h2 class="menu-title">MindMap Prakom Ahli</h2>
     <ul class="list-group">
         <li class="list-group-item menu-item">
-            <a href="ml_ti.html" class="text-decoration-none text-dark">
-                A. Manajemen Layanan TI: 
+            <a href="#" onclick="checkPassword('ml_ti.html')" class="text-decoration-none text-dark">
+                A. Manajemen Layanan TI:
             </a>
         </li>
         <li class="list-group-item menu-item">
-            <a href="sjk.html" class="text-decoration-none text-dark">
+            <a href="#" onclick="checkPassword('sjk.html')" class="text-decoration-none text-dark">
                 B. Sistem Jaringan Komputer
             </a>
         </li>
         <li class="list-group-item menu-item">
-            <a href="si.html" class="text-decoration-none text-dark">
+            <a href="#" onclick="checkPassword('si.html')" class="text-decoration-none text-dark">
                 C. Sistem Informasi
             </a>
         </li>
         <li class="list-group-item menu-item">
-            <a href="pengolahan_data.html" class="text-decoration-none text-dark">
+            <a href="#" onclick="checkPassword('pengolahan_data.html')" class="text-decoration-none text-dark">
                 D. Pengolahan Data
             </a>
         </li>
         <li class="list-group-item menu-item">
-            <a href="pengelolaan_data.html" class="text-decoration-none text-dark">
+            <a href="#" onclick="checkPassword('pengelolaan_data.html')" class="text-decoration-none text-dark">
                 E. Pengelolaan Data
             </a>
         </li>
         <li class="list-group-item menu-item">
-            <a href="it_spesial.html" class="text-decoration-none text-dark">
+            <a href="#" onclick="checkPassword('it_spesial.html')" class="text-decoration-none text-dark">
                 F. Area IT Spesial
             </a>
         </li>
         <li class="list-group-item menu-item">
-            <a href="audit_it.html" class="text-decoration-none text-dark">
+            <a href="#" onclick="checkPassword('audit_it.html')" class="text-decoration-none text-dark">
                 G. Audit TI
             </a>
         </li>
         <li class="list-group-item menu-item">
-            <a href="it_enter.html" class="text-decoration-none text-dark">
+            <a href="#" onclick="checkPassword('it_enter.html')" class="text-decoration-none text-dark">
                 H. IT Enterprise 
             </a>
         </li>
         <li class="list-group-item menu-item">
-            <a href="risiko_ti.html" class="text-decoration-none text-dark">
+            <a href="#" onclick="checkPassword('risiko_ti.html')" class="text-decoration-none text-dark">
                 I. Manajemen Risiko TI
             </a>
         </li>
         <li class="list-group-item menu-item">
-            <a href="inpra.html" class="text-decoration-none text-dark">
+            <a href="#" onclick="checkPassword('inpra.html')" class="text-decoration-none text-dark">
                 J. Manajemen Infrastruktur TI
             </a>
         </li>
@@ -95,5 +95,16 @@
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    function checkPassword(targetUrl) {
+        const password = prompt("Masukkan password untuk mengakses halaman ini:");
+        if (password === "lulusskb") {
+            window.location.href = targetUrl;
+        } else {
+            alert("Password salah! Akses ditolak.");
+        }
+    }
+</script>
 </body>
 </html>
