@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audit Teknologi Informasi - Mind Map</title>
+    <link
+            type="text/css"
+            rel="stylesheet"
+            href="//cdn.jsdelivr.net/npm/jsmind@0.8.6/style/jsmind.css"
+        />
+        <script
+            type="text/javascript"
+            src="//cdn.jsdelivr.net/npm/jsmind@0.8.6/es6/jsmind.js"
+        ></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        #jsmind_container {
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="jsmind_container"></div>
+    <script>
+        var mind = {
+            "meta": {
+                "name": "Audit Teknologi Informasi",
+                "author": "ChatGPT",
+                "version": "0.4.6"
+            },
+            "format": "node_tree",
+            "data": {
+                "id": "root",
+                "topic": "Audit Teknologi Informasi",
+                "children": [
+                    {
+                        "id": "pengantar",
+                        "topic": "Pengantar",
+                        "children": [
+                            {"id": "tujuan", "topic": "Tujuan: Mengelola dan memeriksa sistem TI secara berkala"},
+                            {"id": "manfaat", "topic": "Manfaat: Memenuhi tujuan dan sasaran bisnis"},
+                            {"id": "materi", "topic": "Materi: Masalah, simulasi, kasus praktis"}
+                        ]
+                    },
+                    {
+                        "id": "kerangka_kerja",
+                        "topic": "Kerangka Kerja Audit TI",
+                        "children": [
+                            {"id": "standar", "topic": "Standar dan Framework"},
+                            {"id": "cobit", "topic": "COBIT"},
+                            {"id": "itil", "topic": "ITIL"},
+                            {"id": "cmmi", "topic": "CMMI"},
+                            {"id": "pmbok", "topic": "PMBOK"},
+                            {"id": "prince2", "topic": "PRINCE2"},
+                            {"id": "iso", "topic": "ISO/IEC 20000, ISO/IEC 38500"}
+                        ]
+                    },
+                    {
+                        "id": "proses_audit",
+                        "topic": "Proses Audit TI",
+                        "children": [
+                            {"id": "ruang_lingkup", "topic": "Menentukan Ruang Lingkup, Kriteria, dan Tujuan"},
+                            {"id": "perencanaan", "topic": "Perencanaan Audit TI"},
+                            {"id": "pelaksanaan", "topic": "Melaksanakan Prosedur Audit"}
+                        ]
+                    },
+                    {
+                        "id": "tugas_peran",
+                        "topic": "Tugas dan Peran Auditor TI",
+                        "children": [
+                            {"id": "merencanakan", "topic": "Merencanakan, Melaksanakan, Mengawasi, dan Melaporkan"},
+                            {"id": "pendekatan", "topic": "Menggunakan Pendekatan yang Sesuai"}
+                        ]
+                    },
+                    {
+                        "id": "kesimpulan",
+                        "topic": "Kesimpulan",
+                        "children": [
+                            {"id": "evaluasi", "topic": "Audit TI adalah Kegiatan Evaluasi Sistematis dan Objektif"},
+                            {"id": "kepatuhan", "topic": "Pentingnya Kepatuhan terhadap Prosedur dan Standar"}
+                        ]
+                    }
+                ]
+            }
+        };
+
+        var options = {
+            container: 'jsmind_container',
+            theme: 'primary',
+            mode: 'full',
+            editable: false
+        };
+
+        var jm = new jsMind(options);
+        jm.show(mind);
+    </script>
+</body>
+</html>
