@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Map - Sistem Informasi</title>
+    <link
+            type="text/css"
+            rel="stylesheet"
+            href="//cdn.jsdelivr.net/npm/jsmind@0.8.6/style/jsmind.css"
+        />
+        <script
+            type="text/javascript"
+            src="//cdn.jsdelivr.net/npm/jsmind@0.8.6/es6/jsmind.js"
+        ></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        #jsmind_container {
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="jsmind_container"></div>
+    <script>
+        var mind = {
+            "meta": {
+                "name": "Sistem Informasi",
+                "author": "ChatGPT",
+                "version": "0.4.6"
+            },
+            "format": "node_tree",
+            "data": {
+                "id": "root",
+                "topic": "Sistem Informasi",
+                "children": [
+                    {
+                        "id": "pendahuluan",
+                        "topic": "Pendahuluan",
+                        "children": [
+                            {"id": "latar_belakang", "topic": "Latar Belakang"},
+                            {"id": "tujuan", "topic": "Tujuan Pembelajaran"},
+                            {"id": "pentingnya", "topic": "Pentingnya Sistem Informasi"}
+                        ]
+                    },
+                    {
+                        "id": "pengertian",
+                        "topic": "Pengertian Sistem Informasi",
+                        "children": [
+                            {"id": "definisi", "topic": "Definisi Sistem Informasi"},
+                            {"id": "komponen", "topic": "Komponen Sistem Informasi"},
+                            {"id": "hardware", "topic": "Hardware"},
+                            {"id": "software", "topic": "Software"},
+                            {"id": "data", "topic": "Data"},
+                            {"id": "people", "topic": "People"},
+                            {"id": "procedures", "topic": "Procedures"},
+                             {"id": "networks", "topic": "Networks"}
+                        ]
+                    },
+                    {
+                        "id": "jenis_sistem",
+                        "topic": "Jenis Sistem Informasi",
+                        "children": [
+                            {"id": "TPS", "topic": "Transaction Processing Systems (TPS)"},
+                            {"id": "MIS", "topic": "Management Information Systems (MIS)"},
+                            {"id": "DSS", "topic": "Decision Support Systems (DSS)"},
+                            {"id": "EIS", "topic": "Executive Information Systems (EIS)"}
+                        ]
+                    },
+                    {
+                        "id": "daur_hidup",
+                        "topic": "Daur Hidup Sistem Informasi",
+                        "children": [
+                            {"id": "analisis_kebutuhan", "topic": "Analisis Kebutuhan (Requirements Analysis)"},
+                            {"id": "perancangan", "topic": "Perancangan Sistem (System Design)"},
+                            {"id": "implementasi", "topic": "Implementasi (Implementation)"},
+                            {"id": "pengujian", "topic": "Pengujian (Testing)"},
+                            {"id": "pemeliharaan", "topic": "Pemeliharaan (Maintenance)"}
+                        ]
+                    },
+                    {
+                        "id": "analisis_kebutuhan",
+                        "topic": "Analisis Kebutuhan Sistem Informasi",
+                        "children": [
+                            {"id": "identifikasi_kebutuhan", "topic": "Identifikasi Kebutuhan Pengguna (User  Needs Identification)"},
+                            {"id": "alat_bantu", "topic": "Alat Bantu Analisis (Analysis Tools)"},
+                            {"id": "studi_kelayakan", "topic": "Studi Kelayakan (Feasibility Study)"}
+                        ]
+                    },
+                    {
+                        "id": "perancangan",
+                        "topic": "Perancangan Sistem Informasi",
+                        "children": [
+                            {"id": "pemodelan_proses", "topic": "Pemodelan Proses (Process Modeling)"},
+                            {"id": "desain_antarmuka", "topic": "Desain Antarmuka Pengguna (User  Interface Design)"},
+                            {"id": "arsitektur_sistem", "topic": "Arsitektur Sistem (System Architecture)"}
+                        ]
+                    },
+                    {
+                        "id": "pembangunan",
+                        "topic": "Pembangunan dan Pengembangan Sistem",
+                        "children": [
+                            {"id": "algoritma", "topic": "Algoritma Pemrograman (Programming Algorithms)"},
+                            {"id": "PBO", "topic": "Pemrograman Berorientasi Objek (Object-Oriented Programming)"},
+                            {"id": "pengujian_program", "topic": "Pengujian Program (Program Testing)"}
+                        ]
+                    },
+                    {
+                        "id": "pemantauan",
+                        "topic": "Pemantauan Kinerja Sistem Informasi",
+                        "children": [
+                            {"id": "tujuan_pemantauan", "topic": "Tujuan Pemantauan (Monitoring Objectives)"},
+                            {"id": "hasil_pemantauan", "topic": "Hasil Pemantauan (Monitoring Results)"},
+                            {"id": "prediksi_pemeliharaan", "topic": "Prediksi Pemeliharaan (Maintenance Prediction)"}
+                        ]
+                    },
+                    {
+                        "id": "kesimpulan",
+                        "topic": "Kesimpulan",
+                        "children": [
+                            {"id": "pentingnya", "topic": "Pentingnya Sistem Informasi dalam Pengambilan Keputusan"},
+                            {"id": "kualitas_informasi", "topic": "Kualitas Informasi yang Dihasilkan"},
+                            {"id": "proses_pengelolaan", "topic": "Proses Pengelolaan Sistem Informasi"}
+                        ]
+                    }
+                ]
+            }
+        };
+
+        var options = {
+            container: 'jsmind_container',
+            theme: 'primary',
+            mode: 'full',
+            editable: false
+        };
+
+        var jm = new jsMind(options);
+        jm.show(mind);
+    </script>
+</body>
+</html>

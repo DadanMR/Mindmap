@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Map - Manajemen Layanan TI</title>
+    <link
+            type="text/css"
+            rel="stylesheet"
+            href="//cdn.jsdelivr.net/npm/jsmind@0.8.6/style/jsmind.css"
+        />
+        <script
+            type="text/javascript"
+            src="//cdn.jsdelivr.net/npm/jsmind@0.8.6/es6/jsmind.js"
+        ></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        #jsmind_container {
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="jsmind_container"></div>
+    <script>
+        var mind = {
+            "meta": {
+                "name": "Manajemen Layanan TI",
+                "author": "ChatGPT",
+                "version": "0.4.6"
+            },
+            "format": "node_tree",
+            "data": {
+                "id": "root",
+                "topic": "Manajemen Layanan TI",
+                "children": [
+                    {
+                        "id": "pendahuluan",
+                        "topic": "Pendahuluan",
+                        "children": [
+                            {"id": "latar_belakang", "topic": "Latar Belakang"},
+                            {"id": "tujuan_modul", "topic": "Tujuan Modul"},
+                            {"id": "pentingnya", "topic": "Pentingnya Manajemen Layanan TI"}
+                        ]
+                    },
+                    {
+                        "id": "strategi_layanan",
+                        "topic": "Strategi Layanan TI",
+                        "children": [
+                            {"id": "pengertian_strategy", "topic": "Pengertian Strategy"},
+                            {"id": "tujuan_service_strategy", "topic": "Tujuan Service Strategy"},
+                            {"id": "manfaat_service_strategy", "topic": "Manfaat Service Strategy"},
+                            {"id": "cakupan_service_strategy", "topic": "Cakupan Service Strategy"},
+                            {
+                                "id": "service_portfolio",
+                                "topic": "Service Portfolio",
+                                "children": [
+                                    {"id": "service_pipeline", "topic": "Service Pipeline"},
+                                    {"id": "service_catalogue", "topic": "Service Catalogue"},
+                                    {"id": "retired_services", "topic": "Retired Services"}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "desain_layanan",
+                        "topic": "Desain Layanan TI",
+                        "children": [
+                            {"id": "manajemen_katalog_layanan", "topic": "Manajemen Katalog Layanan"},
+                            {"id": "manajemen_tingkat_layanan", "topic": "Manajemen Tingkat Layanan"},
+                            {"id": "manajemen_kapasitas_layanan", "topic": "Manajemen Kapasitas Layanan"},
+                            {"id": "manajemen_ketersediaan_layanan", "topic": "Manajemen Ketersediaan Layanan"},
+                            {"id": "manajemen_penyedia", "topic": "Manajemen Penyedia"}
+                        ]
+                    },
+                    {
+                        "id": "transisi_layanan",
+                        "topic": "Transisi Layanan TI",
+                        "children": [
+                            {"id": "perencanaan_transisi", "topic": "Perencanaan Transisi dan Dukungan"},
+                            {"id": "manajemen_perubahan", "topic": "Manajemen Perubahan"},
+                            {"id": "manajemen_aset_konfigurasi", "topic": "Manajemen Aset dan Konfigurasi Layanan"},
+                            {"id": "manajemen_rilis", "topic": "Manajemen Rilis dan Penerapan"},
+                            {"id": "validasi_pengujian", "topic": "Validasi, Pengujian, dan Evaluasi Layanan"},
+                            {"id": "manajemen_pengetahuan", "topic": "Manajemen Pengetahuan"}
+                        ]
+                    },
+                    {
+                        "id": "operasional_layanan",
+                        "topic": "Operasional Layanan TI",
+                        "children": [
+                            {"id": "event_management", "topic": "Event Management"},
+                            {"id": "incident_management", "topic": "Incident Management"},
+                            {"id": "problem_management", "topic": "Problem Management"},
+                            {"id": "request_management", "topic": "Request Management"}
+                        ]
+                    },
+                    {
+                        "id": "kesimpulan",
+                        "topic": "Kesimpulan",
+                        "children": [
+                            {"id": "pentingnya_manajemen", "topic": "Pentingnya Manajemen Layanan TI"},
+                            {"id": "kualitas_layanan", "topic": "Kualitas Layanan yang Dihasilkan"},
+                            {"id": "proses_pengelolaan", "topic": "Proses Pengelolaan Layanan TI"}
+                        ]
+                    }
+                ]
+            }
+        };
+
+        var options = {
+            container: 'jsmind_container',
+            theme: 'primary',
+            mode: 'full',
+            editable: false
+        };
+
+        var jm = new jsMind(options);
+        jm.show(mind);
+    </script>
+</body>
+</html>

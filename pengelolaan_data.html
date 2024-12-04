@@ -20,10 +20,6 @@
             padding: 0;
             background-color: #f4f4f4;
         }
-        jmnode {
-            max-width: 700px !important; /* Batasi lebar maksimum node */
-           
-        }
         #jsmind_container {
             width: 100%;
             height: 100vh;
@@ -58,60 +54,60 @@
                         "id": "strategi_pengelolaan",
                         "topic": "Strategi Pengelolaan Data",
                         "children": [
-                            {"id": "manajemen_data", "topic": "Manajemen Data"},
-                            {"id": "strategi_manajemen", "topic": "Strategi Manajemen Data"},
-                            {"id": "komponen_manajemen", "topic": "Komponen Manajemen Data"}
+                            {"id": "manajemen_data", "topic": "Manajemen Data (Data Management)"},
+                            {"id": "strategi_manajemen", "topic": "Strategi Manajemen Data (Data Management Strategy)"},
+                            {"id": "komponen_manajemen", "topic": "Komponen Manajemen Data (Data Management Components)"}
                         ]
                     },
                     {
                         "id": "kebijakan_data",
                         "topic": "Kebijakan Data",
                         "children": [
-                            {"id": "kebijakan", "topic": "Kebijakan Data"},
-                            {"id": "standar_metadata", "topic": "Standar Data dan Metadata"},
-                            {"id": "prosedur_pengelolaan", "topic": "Prosedur Pengelolaan Data"}
+                            {"id": "kebijakan", "topic": "Kebijakan Data (Data Policy)"},
+                            {"id": "standar_metadata", "topic": "Standar Data dan Metadata (Data Standards and Metadata)"},
+                            {"id": "prosedur_pengelolaan", "topic": "Prosedur Pengelolaan Data (Data Management Procedures)"}
                         ]
                     },
                     {
                         "id": "implementasi",
                         "topic": "Implementasi Pengelolaan Data",
                         "children": [
-                            {"id": "rencana_layanan", "topic": "Rencana Layanan Pengelolaan Data"},
-                            {"id": "solusi_permasalahan", "topic": "Penyusunan Solusi Permasalahan"},
-                            {"id": "evaluasi", "topic": "Evaluasi Pelaksanaan Pengelolaan Data"}
+                            {"id": "rencana_layanan", "topic": "Rencana Layanan Pengelolaan Data (Data Management Service Plan)"},
+                            {"id": "solusi_permasalahan", "topic": "Penyusunan Solusi Permasalahan (Problem Solving Solutions)"},
+                            {"id": "evaluasi", "topic": "Evaluasi Pelaksanaan Pengelolaan Data (Evaluation of Data Management Implementation)"}
                         ]
                     },
                     {
                         "id": "keamanan_data",
                         "topic": "Keamanan Data",
                         "children": [
-                            {"id": "kebijakan_keamanan", "topic": "Kebijakan Keamanan Data"},
-                            {"id": "standar_keamanan", "topic": "Standar Keamanan Data"},
-                            {"id": "prosedur_keamanan", "topic": "Prosedur Keamanan Data"}
+                            {"id": "kebijakan_keamanan", "topic": "Kebijakan Keamanan Data (Data Security Policy)"},
+                            {"id": "standar_keamanan", "topic": "Standar Keamanan Data (Data Security Standards)"},
+                            {"id": "prosedur_keamanan", "topic": "Prosedur Keamanan Data (Data Security Procedures)"}
                         ]
                     },
                     {
                         "id": "pemeliharaan_database",
                         "topic": "Pemeliharaan Database",
                         "children": [
-                            {"id": "proses_pemeliharaan", "topic": "Proses Pemeliharaan Database"},
-                            {"id": "backup", "topic": "Backup/Penyalinan Database"},
-                            {"id": "restore", "topic": "Restore/Pemulihan Database"}
+                            {"id": "proses_pemeliharaan", "topic": "Proses Pemeliharaan Database (Database Maintenance Process)"},
+                            {"id": "backup", "topic": "Backup/Penyalinan Database (Database Backup)"},
+                            {"id": "restore", "topic": "Restore/Pemulihan Database (Database Recovery)"}
                         ]
                     }
                 ]
             }
         };
 
-        var options = {
-            container: 'jsmind_container',
-            theme: 'primary',
-            mode: 'full',
-            editable: false
-        };
+var options = {
+    container: 'jsmind_container',
+    theme: 'primary',
+    mode: 'full',
+    editable: false
+};
 
-        var jm = new jsMind(options);
-        jm.show(mind);
-    </script>
+var jm = new jsMind(options);
+jm.show(mind);
+</script>
 </body>
 </html>
