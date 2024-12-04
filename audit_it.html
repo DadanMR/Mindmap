@@ -54,10 +54,9 @@
                 "id": "kerangka_kerja",
                 "topic": "Kerangka Kerja Audit TI",
                 "children": [
-                    { "id": "standar", "topic": "Standar dan Framework" },
                     {
-                        "id": "framework",
-                        "topic": "COBIT, ITIL, CMMI, PMBOK, PRINCE2, ISO/IEC 20000, ISO 21500, ISO/IEC 38500, TOGAF",
+                        "id": "standar_framework",
+                        "topic": "Standar dan Framework",
                         "children": [
                             { "id": "cobit", "topic": "COBIT (Control Objectives for Information and Related Technology)" },
                             { "id": "itil", "topic": "ITIL (Information Technology Infrastructure Library)" },
@@ -133,12 +132,20 @@
             container: 'jsmind_container',
             theme: 'primary',
             mode: 'full',
-            editable: true
+            editable: false,
+            width: 1000,  // Sesuaikan ukuran mind map
+            height: 600,
+            layout: {
+                hspace: 30,  // Jarak horizontal antar node
+                vspace: 30,  // Jarak vertikal antar node
+                pspace: 15   // Jarak antar subnode
+            }
         };
 
         // Initialize and show the mind map
         var jm = new jsMind(options);
         jm.show(mind);
+
 
     </script>
 </body>
