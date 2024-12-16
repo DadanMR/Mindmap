@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Interaktif</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .correct {
+            color: green;
+            font-weight: bold;
+        }
+        .incorrect {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Kuis Interaktif</h1>
+        <div id="quiz-container" class="mt-4">
+            <div class="mb-4">
+                <p><strong>1. Apa kepanjangan dari ISACA?</strong></p>
+                <ul class="list-group" id="question1">
+                    <li class="list-group-item" data-correct="true">Information Systems Audit and Control Association</li>
+                    <li class="list-group-item">International Security and Computer Association</li>
+                    <li class="list-group-item">Information Security and Audit Control Agency</li>
+                    <li class="list-group-item">International Systems Audit Control Association</li>
+                </ul>
+            </div>
+            <div class="mb-4">
+                <p><strong>2. Layer OSI yang bertujuan untuk penyampaian data adalah?</strong></p>
+                <ul class="list-group" id="question2">
+                    <li class="list-group-item" data-correct="true">Layer Transport</li>
+                    <li class="list-group-item">Layer Network</li>
+                    <li class="list-group-item">Layer Data Link</li>
+                    <li class="list-group-item">Layer Application</li>
+                </ul>
+            </div>
+            <button class="btn btn-primary" id="submit">Submit Jawaban</button>
+            <div id="results" class="mt-4"></div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const submitButton = document.getElementById('submit');
+            const resultsContainer = document.getElementById('results');
+
+            submitButton.addEventListener('click', () => {
+                resultsContainer.innerHTML = '';
+                const questions = document.querySelectorAll('#quiz-container .list-group');
+
+                questions.forEach((question, index) => {
+                    const selected = question.querySelector('.list-group-item.active');
+                    const explanation = [
+                        "ISACA adalah singkatan dari 'Information Systems Audit and Control Association', sebuah organisasi profesional yang fokus pada audit, kontrol, dan keamanan sistem informasi.",
+                        "Layer Transport pada model OSI bertanggung jawab untuk penyampaian data antar host, mengatur pengiriman data end-to-end, serta memastikan data diterima dengan benar."
+                    ];
+
+                    if (selected) {
+                        const isCorrect = selected.getAttribute('data-correct') === 'true';
+                        const feedback = document.createElement('p');
+
+                        feedback.innerHTML = `
+                            <strong>Pertanyaan ${index + 1}:</strong> 
+                            <span class="${isCorrect ? 'correct' : 'incorrect'}">${isCorrect ? 'Benar' : 'Salah'}</span>
+                            <br>
+                            ${explanation[index]}
+                        `;
+
+                        resultsContainer.appendChild(feedback);
+                    } else {
+                        const feedback = document.createElement('p');
+                        feedback.innerHTML = `<strong>Pertanyaan ${index + 1}:</strong> <span class="incorrect">Belum Dijawab</span>`;
+                        resultsContainer.appendChild(feedback);
+                    }
+                });
+            });
+
+            document.querySelectorAll('.list-group-item').forEach(item => {
+                item.addEventListener('click', () => {
+                    const siblings = item.parentNode.querySelectorAll('.list-group-item');
+                    siblings.forEach(sibling => sibling.classList.remove('active'));
+                    item.classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
